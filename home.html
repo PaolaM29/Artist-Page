@@ -12,40 +12,40 @@
   body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
   body, html {
       height: 100%;
-      color: #000;
+      color: black;
       line-height: 1.8;
   }
   /* Parallax Effect */
-  .img1, .img2, .img3 {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
       background-attachment: fixed;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
   }
   /* First image (Logo. Full height) */
-  .img1 {
-      background-image: url("C:\Users\Paola Montoya\Documents\GitHub\My-Code-first-repo\ART PICTURES\fondo1.jpg");
+  .bgimg-1 {
+      background-image: url('background1.png');
       min-height: 100%;
   }
 
   /* Second image (Portfolio) */
-  .img2 {
-      background-image: url("C:\Users\Paola Montoya\Documents\GitHub\My-Code-first-repo\ART PICTURES\fondo1.jpg");
+  .bgimg-2 {
+      background-image: url('background1.png');
       min-height: 400px;
   }
 
   /* Third image (Contact) */
-  .img3 {
-      background-image: url("C:\Users\Paola Montoya\Documents\GitHub\My-Code-first-repo\ART PICTURES\fondo1.jpg");
+  .bgimg-3 {
+      background-image: url('background1.png');
       min-height: 400px;
   }
 
-  .w3-wide {letter-spacing: 10px;}
-  .w3-hover-opacity {cursor: pointer;}
+  .pm-wide {letter-spacing: 10px;}
+  .pm-hover-opacity {cursor: pointer;}
 
   /* Turn off parallax scrolling for tablets and phones */
   @media only screen and (max-device-width: 1024px) {
-      .img1, .img2, .img3 {
+      .bgimg-1, .bgimg-2, .bgimg-3 {
           background-attachment: scroll;
       }
   }
@@ -53,186 +53,182 @@
 <body>
 
 <!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+<div class="pm-top">
+  <div class="pm-bar" id="myNavbar">
+    <a class="pm-bar-item pm-button pm-hover-black pm-hide-medium pm-hide-large pm-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
-    <a href="#home" class="w3-bar-item w3-button">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+    <a href="#home" class="pm-bar-item pm-button">HOME</a>
+    <a href="#about" class="pm-bar-item pm-button pm-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#portfolio" class="pm-bar-item pm-button pm-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+    <a href="#contact" class="pm-bar-item pm-button pm-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#" class="pm-bar-item pm-button pm-hide-small pm-right pm-hover-red">
       <i class="fa fa-search"></i>
     </a>
   </div>
 
   <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  <div id="navDemo" class="pm-bar-block pm-white pm-hide pm-hide-large pm-hide-medium">
+    <a href="#about" class="pm-bar-item pm-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="pm-bar-item pm-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="pm-bar-item pm-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="pm-bar-item pm-button">SEARCH</a>
   </div>
 </div>
 
 <!-- First Parallax Image with Logo Text -->
-<div class="img1 w3-display-container w3-opacity-min" id="home">
-  <div class="w3-display-middle" style="black-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">MARCELA <span class="w3-hide-small">MONTOYA</span> ARTIST</span>
+<div class="bgimg-1 pm-display-container pm-opacity-min" id="home">
+  <div class="pm-display-middle"style="white-space:nowrap;">
+    <span class="pm-center pm-padding-large pm-white pm-xlarge pm-wide pm-animate-opacity">MARCELA <span class="pm-hide-small">MONTOYA</span> ARTIST</span>
   </div>
 </div>
 
 <!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">ABOUT ME</h3>
-  <p class="w3-center"><em>"The purpose of art is washing the dust of daily life off of our souls" Pablo Picasso.</em></p>
-  <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-    qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  <div class="w3-row">
-    <div class="w3-col m6 w3-center w3-padding-large">
-      <p><b><i class="fa fa-user w3-margin-right"></i>Marcela Montoya</b></p><br>
-      <img src="C:\Users\Paola Montoya\Documents\GitHub\My-Code-first-repo\ART PICTURES\marcela2.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="300" height="300">
+<div class="pm-content pm-container pm-padding-64" id="about">
+  <h3 class="pm-center">ABOUT ME</h3>
+  <p class="pm-center"><em>"The purpose of art is washing the dust of daily life off of our souls" Pablo Picasso.</em></p>
+  <p></p>
+  <div class="pm-row">
+    <div class="pm-col m6 pm-center pm-padding-large">
+      <p><b><i class="fa fa-user pm-margin-right"></i>Marcela Montoya</b></p><br>
+      <img src="C:\Users\Paola Montoya\Documents\GitHub\My-Code-first-repo\ART PICTURES\marcela2.jpg" class="pm-round pm-image pm-opacity pm-hover-opacity-off" alt="Photo of Me" width="280" height="280">
     </div>
 
     <!-- Hide this text on small devices -->
-    <div class="w3-col m6 w3-hide-small w3-padding-large">
-      <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <div class="pm-col m6 pm-hide-small pm-padding-large">
+      <p></br></br>
+
+        My name is Marcela. I was born in 1997 in Honduras. In 2014 I moved to the UK to join my family here. Since then,
+        I demonstrated a lot of interest in art. I produced a lot of work in secondary school and got my GCSE in art with A.
+        I decided then to continue developing my knowledge and techniques to produce art.
+        I was accepted at Coleg Ceredigion in 2015 to continue with my dream.
+        I graduated in BTEC Level 3 Extended Diploma in Art and Design after two Years.
+        Currently I am in my second Year for BA Fine Arts at Aberystwyth University.
+        Nothing in this life makes more happy than doing my work. I am creating more and better.
+        I am actualli gaining skills in painting, printmaking, drawing, photography, book illustration,
+        experimental film, installation and site-specific performance, this definitelly allows me to connect
+        traditional skills with contemporary practice and theory. The School of Art in Aberystwyth is 2nd in the
+        UK for teaching experience and 3rd in the UK for teaching quality. </p>
     </div>
   </div>
-  <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
-  <p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
-  </div>
-  <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
-  </div>
-  <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
-  </div>
-</div>
+</br>
 
-<div class="w3-row w3-center w3-dark-grey w3-padding-16">
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">14+</span><br>
-    Partners
+<!-- Skills Percentage Bars -->
+  <p class="pm-large pm-center pm-padding-16">Im really good at:</p>
+  <p class="pm-wide"><i class="fa fa-camera"></i>Photography</p>
+
+  <div class="pm-light-grey">
+    <div class="pm-container pm-padding-small pm-dark-grey pm-center" style="width:90%">90%</div>
   </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">55+</span><br>
-    Projects Done
+  <p class="pm-wide"><i class="fa fa-print"></i>Printmaking Design</p>
+  <div class="pm-light-grey">
+    <div class="pm-container pm-padding-small pm-dark-grey pm-center" style="width:85%">85%</div>
   </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">89+</span><br>
-    Happy Clients
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">150+</span><br>
-    Meetings
+  <p class="pm-wide"><i class="fa fa-paint-brush"></i>Painting</p>
+  <div class="pm-light-grey">
+    <div class="pm-container pm-padding-small pm-dark-grey pm-center" style="width:90%">90%</div>
   </div>
 </div>
 
 <!-- Second Parallax Image with Portfolio Text -->
-<div class="img2 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+<div class="bgimg-2 pm-display-container pm-opacity-min">
+  <div class="pm-display-middle">
+    <span class="pm-xxlarge pm-text-white pm-wide">PORTFOLIO</span>
   </div>
 </div>
 
 <!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container w3-padding-64" id="portfolio">
-  <h3 class="w3-center">MY WORK</h3>
-  <p class="w3-center"><em>Here are some of my latest work.<br> Click on the images to make them bigger</em></p><br>
+<div class="pm-content pm-container pm-padding-64" id="portfolio">
+  <h3 class="pm-center">MY WORK</h3>
+  <p class="pm-center"><em>Here are some of my latest work.<br> Click on the images to make them bigger</em></p><br>
 
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <div class="w3-row-padding w3-center">
-    <div class="w3-col m3">
-      <img src="C:\Users\Paola Montoya\Documents\GitHub\My-Code-first-repo\ART PICTURES\pic3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+  <div class="pm-row-padding pm-center">
+    <div class="pm-col m3">
+      <img src="C:\Users\Paola Montoya\Documents\GitHub\My-Code-first-repo\ART PICTURES\pic3.jpg" style="width:100%" onclick="onClick(this)" class="pm-hover-opacity" alt="The mist over the mountains">
     </div>
 
-    <div class="w3-col m3">
-      <img src="C:\Users\Paola Montoya\Documents\GitHub\My-Code-first-repo\ART PICTURES\banco.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
+    <div class="pm-col m3">
+      <img src="C:\Users\Paola Montoya\Documents\GitHub\My-Code-first-repo\ART PICTURES\banco.jpg" style="width:100%" onclick="onClick(this)" class="pm-hover-opacity" alt="Coffee beans">
     </div>
 
-    <div class="w3-col m3">
-      <img src="C:\Users\Paola Montoya\Documents\GitHub\My-Code-first-repo\ART PICTURES\door.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
+    <div class="pm-col m3">
+      <img src="C:\Users\Paola Montoya\Documents\GitHub\My-Code-first-repo\ART PICTURES\door.jpg" style="width:100%" onclick="onClick(this)" class="pm-hover-opacity" alt="Bear closeup">
     </div>
 
-    <div class="w3-col m3">
-      <img src="C:\Users\Paola Montoya\Documents\GitHub\My-Code-first-repo\ART PICTURES\flowers.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
+    <div class="pm-col m3">
+      <img src="C:\Users\Paola Montoya\Documents\GitHub\My-Code-first-repo\ART PICTURES\flowers.jpg" style="width:100%" onclick="onClick(this)" class="pm-hover-opacity" alt="Quiet ocean">
     </div>
   </div>
 
-  <div class="w3-row-padding w3-center w3-section">
-    <div class="w3-col m3">
-      <img src="C:\Users\Paola Montoya\Documents\GitHub\My-Code-first-repo\ART PICTURES\pic1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
+  <div class="pm-row-padding pm-center pm-section">
+    <div class="pm-col m3">
+      <img src="C:\Users\Paola Montoya\Documents\GitHub\My-Code-first-repo\ART PICTURES\pic1.jpg" style="width:100%" onclick="onClick(this)" class="pm-hover-opacity" alt="The mist">
     </div>
 
-    <div class="w3-col m3">
-      <img src="C:\Users\Paola Montoya\Documents\GitHub\My-Code-first-repo\ART PICTURES\arte5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
+    <div class="pm-col m3">
+      <img src="C:\Users\Paola Montoya\Documents\GitHub\My-Code-first-repo\ART PICTURES\arte5.jpg" style="width:100%" onclick="onClick(this)" class="pm-hover-opacity" alt="My beloved typewriter">
     </div>
 
-    <div class="w3-col m3">
-      <img src="C:\Users\Paola Montoya\Documents\GitHub\My-Code-first-repo\ART PICTURES\arte6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
+    <div class="pm-col m3">
+      <img src="C:\Users\Paola Montoya\Documents\GitHub\My-Code-first-repo\ART PICTURES\arte6.jpg" style="width:100%" onclick="onClick(this)" class="pm-hover-opacity" alt="Empty ghost train">
     </div>
 
-    <div class="w3-col m3">
-      <img src="C:\Users\Paola Montoya\Documents\GitHub\My-Code-first-repo\ART PICTURES\arte7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
+    <div class="pm-col m3">
+      <img src="C:\Users\Paola Montoya\Documents\GitHub\My-Code-first-repo\ART PICTURES\arte7.jpg" style="width:100%" onclick="onClick(this)" class="pm-hover-opacity" alt="Sailing">
     </div>
-
-    <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
-  </div>
+</br>
+</div>
+<div class="pm-row-padding pm-center pm-section">
+    <button class="pm-button pm-center pm-padding-large pm-light-grey" style="margin-top:64px">LOAD MORE</button>
+</div></div>
 </div>
 
 <!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
+<div id="modal01" class="pm-modal pm-white" onclick="this.style.display='none'">
+  <span class="pm-button pm-large pm-white pm-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="pm-modal-content pm-animate-zoom pm-center pm-transparent pm-padding-64">
+    <img id="img01" class="pm-image">
+    <p id="caption" class="pm-opacity pm-large"></p>
   </div>
 </div>
 
 <!-- Third Parallax Image with Portfolio Text -->
-<div class="img3 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+<div class="bgimg-3 pm-display-container pm-opacity-min">
+  <div class="pm-display-middle">
+     <span class="pm-xxlarge pm-text-white pm-wide">CONTACT</span>
   </div>
 </div>
 
 <!-- Container (Contact Section) -->
-<div class="w3-content w3-container w3-padding-64" id="contact">
-  <h3 class="w3-center">WHERE I WORK</h3>
-  <p class="w3-center"><em>I'd love your feedback!</em></p>
+<div class="pm-content pm-container pm-padding-64" id="contact">
+  <h3 class="pm-center">CONTACT FORM</h3>
+  <p class="pm-center"><em>I'd love to hear from you!</em></p>
 
-  <div class="w3-row w3-padding-32 w3-section">
-    <div class="w3-col m4 w3-container">
+  <div class="pm-row pm-padding-32 pm-section">
+    <div class="pm-col m4 pm-container">
+
       <!-- Add Google Maps -->
-      <div id="googleMap" class="w3-round-large w3-greyscale" style="width:100%;height:400px;"></div>
+      <div id="googleMap" class="pm-round-large pm-greyscale" style="width:100%;height:400px;"></div>
     </div>
-    <div class="w3-col m8 w3-panel">
-      <div class="w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Chicago, US<br>
-        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 151515<br>
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail@mail.com<br>
+    <div class="pm-col m8 pm-panel">
+      <div class="pm-large pm-margin-bottom">
+        <i class="fa fa-map-marker fa-fw pm-hover-text-black pm-xlarge pm-margin-right"></i> Aberystwyth, UK<br>
+        <i class="fa fa-phone fa-fw pm-hover-text-black pm-xlarge pm-margin-right"></i> Phone: +447732407809 <br>
+        <i class="fa fa-envelope fa-fw pm-hover-text-black pm-xlarge pm-margin-right"></i> Email: mam22@aber.ac.uk<br>
       </div>
       <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
       <form action="/action_page.php" target="_blank">
-        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+        <div class="pm-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="pm-half">
+            <input class="pm-input pm-border" type="text" placeholder="Name" required name="Name">
           </div>
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          <div class="pm-half">
+            <input class="pm-input pm-border" type="text" placeholder="Email" required name="Email">
           </div>
         </div>
-        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-        <button class="w3-button w3-black w3-right w3-section" type="submit">
+        <input class="pm-input pm-border" type="text" placeholder="Message" required name="Message">
+        <button class="pm-button pm-light-gray pm-right pm-section" type="submit">
           <i class="fa fa-paper-plane"></i> SEND MESSAGE
         </button>
       </form>
@@ -241,24 +237,24 @@
 </div>
 
 <!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
+<footer class="pm-center pm-white pm-padding-64 pm-opacity pm-hover-opacity-off">
+  <a href="#home" class="pm-button pm-light-grey"><i class="fa fa-arrow-up pm-margin-right"></i>To the top</a>
+  <div class="pm-xlarge pm-section">
+    <i class="fa fa-facebook-official pm-hover-opacity"></i>
+    <i class="fa fa-instagram pm-hover-opacity"></i>
+    <i class="fa fa-snapchat pm-hover-opacity"></i>
+    <i class="fa fa-pinterest-p pm-hover-opacity"></i>
+    <i class="fa fa-twitter pm-hover-opacity"></i>
+    <i class="fa fa-linkedin pm-hover-opacity"></i>
   </div>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <p>Created by <a href="https://www.facebook.com/paosciencenews/" title="march.css" target="_blank" class="pm-hover-text-green">Paola Montoya</a></p>
 </footer>
 
 <!-- Add Google Maps -->
 <script>
 function myMap()
 {
-  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  myCenter=new google.maps.LatLng(52.415089, -4.083116);
   var mapOptions= {
     center:myCenter,
     zoom:12, scrollwheel: false, draggable: false,
@@ -285,27 +281,24 @@ window.onscroll = function() {myFunction()};
 function myFunction() {
     var navbar = document.getElementById("myNavbar");
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+        navbar.className = "pm-bar" + " pm-card" + " pm-animate-top" + " pm-white";
     } else {
-        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+        navbar.className = navbar.className.replace(" pm-card pm-animate-top pm-white", "");
     }
 }
 
 // Used to toggle the menu on small screens when clicking on the menu button
 function toggleFunction() {
     var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
+    if (x.className.indexOf("pm-show") == -1) {
+        x.className += " pm-show";
     } else {
-        x.className = x.className.replace(" w3-show", "");
+        x.className = x.className.replace(" pm-show", "");
     }
 }
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
-<!--
-To use this code on your website, get a free API key from Google.
-Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
--->
 
-</body>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkqNKqcqNwYVLVWrJs638UPmR8w9vp3vQ&callback=myMap">
+</script>
+
 </html>
